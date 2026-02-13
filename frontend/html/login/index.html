@@ -1,0 +1,84 @@
+<!--index.html--> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar & Cadastrar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@akar-icons/font/dist/akar-icons.css" />
+</head>
+
+<body>
+  <div class="card">
+    <nav class="nav">
+      <span class="active-bar"></span>
+      <ul class="nav-list">
+        <li>
+          <button type="button" class="nav-btn active" id="btn-signin" onclick="selectView('signin')">
+            <i class="ai-person-check"></i>
+            <span>Entrar</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="nav-btn" id="btn-signup" onclick="selectView('signup')">
+            <i class="ai-person-add"></i>
+            <span>Cadastrar</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-inner" id="hero-inner">
+        <div class="hero-content">
+          <h2>Bem-vindo de volta.</h2>
+          <p>Por favor, insira suas credenciais para continuar.</p>
+          <img src="image/Logo1.jpg" alt="Ilustração de Entrada" />
+        </div>
+        <div class="hero-content">
+          <h2>Crie sua conta</h2>
+          <p>Junte-se a nós e comece agora mesmo.</p>
+          <img src="image/Logo2.jpg" alt="Ilustração de Cadastro" />
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <div class="forms-slider" id="forms-slider">
+        <form class="auth-form" id="form-signin">
+          <div class="input-group">
+            <label for="login-email">E-mail</label>
+            <input type="email" id="login-email" required placeholder="seu@email.com" />
+          </div>
+          <div class="input-group">
+            <label for="login-pass">Senha</label>
+            <input type="password" id="login-pass" required placeholder="••••••••" />
+          </div>
+          <button type="submit" class="btn-submit">Entrar</button>
+        </form>
+
+        <form class="auth-form" id="form-signup">
+          <div class="input-group">
+            <label for="reg-name">Nome Completo</label>
+            <input type="text" id="reg-name" required placeholder="Seu nome" />
+          </div>
+          <div class="input-group">
+            <label for="reg-email">E-mail</label>
+            <input type="email" id="reg-email" required placeholder="seu@email.com" />
+          </div>
+          <div class="input-group">
+            <label for="reg-pass">Senha</label>
+            <input type="password" id="reg-pass" required placeholder="••••••••" />
+          </div>
+          <button type="submit" class="btn-submit">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
